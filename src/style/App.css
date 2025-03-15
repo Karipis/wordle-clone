@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121213f7;
+}
+
+#guess-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#title{
+  font-size: 50px;   
+  letter-spacing: 10px;
+}
+
+
+#o,#l{
+  color: #538D4E;
+}
+
+#r,#e{
+  color: #B59F3B;
+}
+

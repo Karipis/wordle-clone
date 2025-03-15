@@ -1,0 +1,46 @@
+#key-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 45px;
+    color: white;
+    background-color: #818384;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.key:hover{
+    background-color: #8183847c;
+}
+.big{
+    width: 70px;
+}
+.key-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.green{
+    background: #538D4E;
+}
+
+.yellow{
+    background: #B59F3B;
+}
+
+#enter{
+    transform: rotate(180deg);
+}
