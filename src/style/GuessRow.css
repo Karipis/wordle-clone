@@ -5,7 +5,7 @@
     color: white;
 }
 
-.square{
+.square {
     width: 60px;
     height: 60px;
     border: 2px solid #3A3A3C;
@@ -17,25 +17,25 @@
     transition: all ease 0.8s;
 }
 
-.flip{
+.flip {
     transform: rotateX(180deg) scaleY(-1);
-    }
+}
 
-#guess-row{
+#guess-row {
     display: flex;
     gap: 5px;
     justify-content: center;
     align-items: center;
 }
 
-.green{
+.green {
     background: #538D4E;
 }
 
-.yellow{
+.yellow {
     background: #B59F3B;
 }
 
-.gray{
+.gray {
     background: #3A3A3C;
 }

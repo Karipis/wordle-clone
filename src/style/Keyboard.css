@@ -1,4 +1,4 @@
-#key-container{
+#key-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,7 +6,7 @@
     gap: 5px;
 }
 
-.key{
+.key {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,44 +19,47 @@
     transition: all ease 0.4s;
 }
 
-@media(max-width: 767px){
-    .key{
+@media(max-width: 767px) {
+    .key {
         width: 33px;
     }
 
-    .key.big{
+    .key.big {
         width: 51.3px;
     }
 }
-.key:hover{
+
+.key:hover {
     background-color: #8183847c;
 }
-.big{
+
+.big {
     width: 70px;
 }
-.key-row{
+
+.key-row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
 
-.green{
+.green {
     background: #538D4E;
 }
 
-.green:hover{
+.green:hover {
     background: #538d4e85;
 }
 
-.yellow{
+.yellow {
     background: #B59F3B;
 }
 
-.yellow:hover{
+.yellow:hover {
     background: #b59f3b7a;
 }
 
-#enter{
+#enter {
     transform: rotate(180deg);
 }

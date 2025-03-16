@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins';
 }
 
-.App{
+.App {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,23 +14,39 @@
   gap: 25px;
 }
 
-#guess-container{
+#guess-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#title{
-  font-size: 50px;   
+#title {
+  font-size: 50px;
   letter-spacing: 10px;
 }
 
 
-#o,#l{
+#o,
+#l {
   color: #538D4E;
 }
 
-#r,#e{
+#r,
+#e {
   color: #B59F3B;
 }
 
+#play {
+  outline-style: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  color: black;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+#play:hover {
+  background: rgb(198, 198, 198);
+}
