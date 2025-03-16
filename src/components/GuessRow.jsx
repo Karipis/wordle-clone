@@ -4,7 +4,7 @@ function GuessRow(props) {
   return (
     <div id='guess-row'>
       {props.guess.map((letter, index) => (
-        <div key={index} className={`square ${props.color[index]}`}>
+        <div key={index} className={`square ${props.color[index]} ${props.active[index]}`}>
           {letter}
         </div>
       ))}
@@ -13,3 +13,4 @@ function GuessRow(props) {
 }
 
 export default GuessRow;
+    

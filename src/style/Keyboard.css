@@ -1,5 +1,4 @@
 #key-container{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +19,15 @@
     transition: all ease 0.4s;
 }
 
+@media(max-width: 767px){
+    .key{
+        width: 33px;
+    }
+
+    .key.big{
+        width: 51.3px;
+    }
+}
 .key:hover{
     background-color: #8183847c;
 }
@@ -37,8 +45,16 @@
     background: #538D4E;
 }
 
+.green:hover{
+    background: #538d4e85;
+}
+
 .yellow{
     background: #B59F3B;
+}
+
+.yellow:hover{
+    background: #b59f3b7a;
 }
 
 #enter{
