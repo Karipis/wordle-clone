@@ -51,7 +51,7 @@ function App() {
   };
 
   function assignLetter(letter) {
-    if (letterIndex < 5 && currentRow < 5) {
+    if (letterIndex < 5 && currentRow < 5 && !gameOver) {
       const newGuesses = [...guesses];
       newGuesses[currentRow][letterIndex] = letter.toUpperCase();
       setGuesses(newGuesses);
@@ -60,7 +60,7 @@ function App() {
   }
 
   function enterWord() {
-    if (letterIndex === 5 && currentRow < 5) {
+    if (letterIndex === 5 && currentRow < 5 && !gameOver) {
       const newActive = [...active];
       const newColors = [...colors];
 

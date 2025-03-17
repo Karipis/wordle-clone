@@ -29,9 +29,6 @@
     }
 }
 
-.key:hover {
-    background-color: #8183847c;
-}
 
 .big {
     width: 70px;
@@ -48,18 +45,15 @@
     background: #538D4E;
 }
 
-.green:hover {
-    background: #538d4e85;
-}
+
 
 .yellow {
     background: #B59F3B;
 }
 
-.yellow:hover {
-    background: #b59f3b7a;
+.key:hover {
+    opacity: 70%;
 }
-
 #enter {
     transform: rotate(180deg);
 }
