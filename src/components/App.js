@@ -41,6 +41,7 @@ function App() {
       .then(json => {
         if (json.length > 0) {
           setWord(json[0].toUpperCase().split("")); // Convert to uppercase & split
+          console.log(`Word is: ${json[0].toUpperCase()}`);
         }
       })
       .catch(error => console.error("Error fetching word:", error));
@@ -151,7 +152,7 @@ function App() {
       })
       .catch(error => console.error("Error fetching word:", error));
   }
-  console.log(word);
+  
   return (
     <div className="App">
       <h1 id='title'>W<span id='o'>O</span><span id='r'>R</span>D<span id='l'>L</span><span id='e'>E</span></h1>
