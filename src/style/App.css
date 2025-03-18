@@ -51,6 +51,6 @@
   background: rgb(198, 198, 198);
 }
 
-#title:active{
-  color: red;
+#message{
+  text-align: center;
 }

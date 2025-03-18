@@ -36,12 +36,12 @@ function App() {
   const [letterIndex, setLetterIndex] = useState(0);
 
   useEffect(() => {
-    fetch('https://random-word-api.herokuapp.com/word?length=5')
+    fetch('https://random-word-api.vercel.app/api?words=1&length=5&type=uppercase')
       .then((response) => response.json())
       .then(json => {
         if (json.length > 0) {
           setWord(json[0].toUpperCase().split("")); // Convert to uppercase & split
-          console.log(`Word is: ${json[0].toUpperCase()}`);
+          console.log(`Word is: ${json[0]}`);
         }
       })
       .catch(error => console.error("Error fetching word:", error));
@@ -161,7 +161,7 @@ function App() {
           <GuessRow key={index} guess={guess} color={colors[index]} active={active[index]}/>
         ))}
       </div>
-      <h2>{message}</h2>
+      <h2 id='message'>{message}</h2>
       {gameOver && <button id='play' onClick={resetGame}>Play again</button>}
       <Keyboard enterWord={enterWord} removeLetter={removeLetter} handleClick={handleClick}/>
     </div>
