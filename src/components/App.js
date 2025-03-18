@@ -86,7 +86,6 @@ function App() {
         setMessage(`Game over! The word was: ${tempWord}`);
       }
 
-
       setActive(newActive);
       setColors(newColors);
       setCurrentRow(currentRow + 1);
