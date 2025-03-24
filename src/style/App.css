@@ -4,6 +4,9 @@
   font-family: 'Poppins';
 }
 
+body{
+  background-color: #121213;
+}
 .App {
   height: 100vh;
   display: flex;
@@ -53,4 +56,63 @@
 
 #message{
   text-align: center;
+}
+
+#pop-btn{
+  cursor: pointer;
+  border: none;
+  background-color:C;
+  position: fixed;
+  height: 50px;
+  width: 100px;
+  top: 35px;
+  right: 35px;
+  border-radius: 10px;
+  background-color:  #B59F3B;
+}
+
+#pop {
+  text-align: center;
+  color: black;
+  height: 500px;
+  width: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border: 1px solid black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.381);
+  border-radius: 8px;
+    border: 2px solid #B59F3B;
+}
+
+@media screen and (max-width:767px){
+  #pop-btn{
+    height: 40px;
+      width: 55px;
+  }
+}
+.ball{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#gray{
+  background-color: #3A3A3C;
+}
+
+#orange{
+  background-color: #B59F3B;;
+}
+
+#green{
+  background-color:  #538D4E;;
+}
+.rules{
+  margin-top: 15px;
+  color: black;
 }

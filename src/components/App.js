@@ -151,8 +151,18 @@ function App() {
       })
       .catch(error => console.error("Error fetching word:", error));
   }
-  
+  console.log(HTMLDivElement.prototype.showPopover);
+
   return (
+    <>
+    <button id="pop-btn" popovertarget="pop">Rules</button>
+
+    <div popover="auto" id="pop">You need to guess a random 5 letter word. You have 5 tries in total.
+      <p className='rules'>The color <div class="ball" id="gray"></div> means that the particular letter does not exist in the word.</p>
+      <p className='rules'>The color <div class="ball" id="orange"></div> means that the particular letter exists but is not on the right order.</p>
+      <p className='rules'>The color <div class="ball" id="green"></div> means that the particular letter exists and is on the right order.</p>
+    </div>
+
     <div className="App">
       <h1 id='title'>W<span id='o'>O</span><span id='r'>R</span>D<span id='l'>L</span><span id='e'>E</span></h1>
       <div id='guess-container'>
@@ -164,7 +174,10 @@ function App() {
       {gameOver && <button id='play' onClick={resetGame}>Play again</button>}
       <Keyboard enterWord={enterWord} removeLetter={removeLetter} handleClick={handleClick}/>
     </div>
+    </>
   );
 }
 
 export default App;
+
+//https://api.dictionaryapi.dev/api/v2/entries/en/word
